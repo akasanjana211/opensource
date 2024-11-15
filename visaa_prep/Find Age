@@ -1,0 +1,3 @@
+x=int(input())
+age_difference = 15
+print(x-15)
