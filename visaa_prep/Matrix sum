@@ -1,0 +1,14 @@
+N=int(input())
+matrix=[]
+for _ in range(N):
+    matrix.append(list(map(int,input().split())))
+rows_sums=[0]*N
+cols_sums=[0]*N
+for i in range(N):
+    for j in range(N):
+        rows_sums[i]+=matrix[i][j]
+        cols_sums[j]+=matrix[i][j]
+result=[]
+for i in range(N):
+    result.append(rows_sums[i]+cols_sums[i])
+print(" ".join(map(str,result)))
