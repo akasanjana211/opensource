@@ -1,0 +1,8 @@
+X,N=map(int,input().split())
+import math
+t_planes_req=math.ceil(N/100)
+planes_purchased=t_planes_req-X
+if planes_purchased>0:
+    print(planes_purchased)
+else:
+    print("0")
