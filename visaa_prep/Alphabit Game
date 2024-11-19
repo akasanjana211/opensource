@@ -1,0 +1,10 @@
+p=input()
+count_v=0
+count_c=0
+p=p.lower()
+for i in p:
+    if i in "aeiou":
+        count_v+=1
+    elif i.isalpha():
+        count_c+=1
+print(f"{count_v},{count_c}")
