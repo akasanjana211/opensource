@@ -1,0 +1,9 @@
+N=int(input())
+arr=list(map(int,input().split()))
+X=int(input())
+for i in range(N):
+    if X==arr[i]:
+        print(i)
+        break
+if X!=arr[i]:
+    print("-1")
